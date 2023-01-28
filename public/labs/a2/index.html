@@ -269,8 +269,191 @@
     <input type="radio" value="FANTASY"
            name="radio-genre" id="radio-fantasy"/>
     <label for="radio-fantasy">Fantasy</label>
+    <br/>
 
+    <!--2.6.8 Checkboxes (2pts)-->
+    <!--	use the input tag's checkbox type to declare a checkbox give the checkbox a value	-->
+    <input type="checkbox"
+           name="NAME2"
+           checked
+           value="OPTION1"/>
+    <input type="checkbox"
+           name="NAME2"
+           value="OPTION2"/>
+    <input type="checkbox"
+           checked
+           name="NAME2"
+           value="OPTION3"/>
 
+    <h2>Checkboxes</h2>
+    <label>Favorite movie genre:</label>
+    <br/>
+    <!--4 check box have the same name -> only one check box will be selected-->
+    <input type="checkbox" value="COMEDY"
+           name="check-genre" id="chkbox-comedy" checked/>
+    <label for="chkbox-comedy">Comedy</label>
+    <br/>
+    <input type="checkbox" value="DRAMA"
+           name="check-genre" id="chkbox-drama"/>
+    <label for="chkbox-drama">Drama</label>
+    <br/>
+    <input type="checkbox" value="SCIFI"
+           name="check-genre" id="chkbox-scifi" checked/>
+    <label for="chkbox-scifi">Science Fiction</label>
+    <br/>
+    <input type="checkbox" value="FANTASY"
+           name="check-genre" id="chkbox-fantasy"/>
+    <label for="chkbox-fantasy">Fantasy</label>
+    <br/>
+
+    <!--2.7 Anchor Tag (5pts)-->
+    <!--The anchor tag allows navigating to other websites or other pages within the same website.-->
+    <a href="aa.com">American Airlines</a>
+
+    <h2>Anchor tag</h2>
+
+    Please<a href="https://www.lipsum.com"> click here </a> to get dummy text
+    <br/>
+
+    Checkout my <a href="other-page.html">other page</a>
+    <br/>
+    <!--2.8 Exercises-->
+    <!--In an index.html file in public/labs/a2/index.html, complete the following exercises as described in the sections 2.1 through 2.2 listed below
+    1.	Implement the headings as described in section 2.1 (5pts)
+    2.	Implement the paragraphs as described in section 2.2 (5pts)
+    3.	Implement the lists as described in section 2.3 (10pts)
+    4.	Implement the tables as described in section 2.4 (5pts)
+    5.	Implement the images as described in section 2.5 (5pts)
+    6.	Implement the form tags as described in section 2.6 (15pts)
+    7.	Implement the tags as described in section 2.7 (5pts)
+    -->
+    <!--4 Challenge (50pts required for graduate students)-->
+    <!--4.1 Iframes (20pts)-->
+    <!--4.1.1 Embedding other Web sites (6pts)-->
+    <!--	width and height attributes configure the size of the rectangle we want to dedicate to the other Web site.
+    the src attribute points to the location of the other Web site -->
+
+    <h2>Table of content</h2>
+    <ul>
+        <li><a href="#embedding-website">Embedding other websites</a></li>
+        <li><a href="#embedding-youtube">Embedding YouTube</a></li>
+        <li><a href="#embedding-slides">Embedding other websites</a></li>
+    </ul>
+    <a name="embedding-website"></a>
+    <h2>Embedding other websites</h2>
+    <a href="#top">Top</a><br/>
+    <iframe width="600"
+            height="400"
+            src="https://en.wikipedia.org/wiki/SpaceX">
+    </iframe>
+
+    <!--4.1.2 Embedding a YouTube video (7pts)-->
+    <a name="embedding-youtube"></a>
+    <h2>Embedding YouTube</h2>
+    <a href="#top">Top</a><br/>
+    <iframe width="560"
+            height="315"
+            src="https://www.youtube.com/embed/7CZTLogln34"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
+
+    <!--4.1.3 Embedding Google slides (7pts)-->
+    <a name="embedding-slides"></a>
+    <h2>Embedding Google slides</h2>
+    <a href="#top">Top</a><br/>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQoIYM2gXzRLKt4q5D2-ZahG7zvVcAipkRvj5k9GVLiGDs8NPlLpO3Q08cPUKQbqhL6g8aZp1ZJSwrw/embed?start=false&loop=false&delayms=3000"
+            frameborder="0"
+            width="680"
+            height="418"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true">
+    </iframe>
+    <br/>
+
+    <!--4.2 Scalable vector graphics (SVG) (20pts)-->
+    <!--	svg declares a rectangular area where we can draw
+    width and height attributes configure the size of the area.
+
+    rect tag declares a rectangular area to draw a rectangle.
+    width and height attributes declare size of rectangle.
+    style attribute declares border and fill colors and border width
+
+    circle tag declares a rectangular area to draw a circle.
+    cx and cy attributes declares the center position.
+    r attribute declares the radius of the circle.
+    stroke declares the color to draw with.
+    stroke-width declares the size of the border.
+    fill declares color to fill the circle -->
+
+    <svg width="300"
+         height="100">
+        <rect  width="300"
+               height="100"
+               style="fill:rgb(0,0,255);stroke:rgb(0,0,0);stroke-width:10;" />
+        <circle cx="50" cy="50"
+                r="40"
+                stroke="green"
+                stroke-width="4"
+                fill="yellow" />
+    </svg>
+
+    <h2>Table of content</h2>
+    <ul>
+        <li><a href="#rectangles">rectangles</a></li>
+        <li><a href="#circles">circles</a></li>
+        <li><a href="#polygons">polygons</a></li>
+    </ul>
+
+    <!--4.2.1 Drawing rectangles (6pts)-->
+    <a name="rectangles"></a>
+    <h2>Drawing rectangles</h2>
+    <a href="#top">Top</a><br/>
+
+    <svg width="300" height="100">
+        <rect width="300" height="100"
+              style="fill:rgb(0,0,255); stroke-width:10;
+   stroke:rgb(0,0,0)" />
+    </svg>
+
+    <!--4.2.2 Drawing circles (7pts)-->
+    <a name="circles"></a>
+    <h2>Drawing circles</h2>
+    <a href="#top">Top</a><br/>
+
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"
+                stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+
+    <!--4.2.3 Drawing polygons (7pts)-->
+    <a name="polygons"></a>
+    <h2>Drawing polygons</h2>
+    <a href="#top">Top</a><br/>
+
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+                 style="fill:lime; stroke:purple; stroke-width:5; fill-rule:evenodd;" />
+    </svg>
+    <br/>
+
+    <!--4.3 Anchors (10pts)-->
+    <a name="table-of-content"></a>
+    <a href="#section-a">Go to section A</a>
+    <a href="#section-b">Go to section B</a>
+
+    <a name="section-a"></a>
+    <h1>Section A</h1></a>
+    <a href="#table-of-content">Up</a>
+
+    <a name="section-b"></a>
+    <h1>Section B</h1></a>
+    <a href="#table-of-content">Up</a>
+
+    <!--4.3.1 Table of content anchors-->
 
 
 </body>
