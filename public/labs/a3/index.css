@@ -267,6 +267,12 @@ The "both" value is used to clear floats on both the left and right sides of an 
     background-color: red;
     color: white;
 }
+.rotate-list-1 {
+    transform: rotate(-12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
 /*5.2 Rotating a list item (5pts)*/
 .rotate-list-items li {
     width: 100px;
