@@ -1,0 +1,14 @@
+.board {
+    border-width: 1px;
+    padding-left: 15px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.board-item {
+    width: 30%;
+    float: left;
+    padding: 1em;
+    text-align: center;
+}

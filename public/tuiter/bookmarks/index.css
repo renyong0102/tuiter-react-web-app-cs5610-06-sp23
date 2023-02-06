@@ -1,0 +1,117 @@
+body {
+    background-color: black;
+}
+
+.wd-fg-white{
+    color: white;
+}
+
+.wd-margin-top-12px-left-16px{
+    /*position: absolute;*/
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.wd-avatar-image{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wd-margin-top-5px-left-16px{
+    margin-top: 5px;
+    margin-left: 16px;
+}
+.wd-margin-top-1px-left-16px{
+    margin-top: 1px;
+    margin-left: 16px;
+}
+.wd-margein-bottom-0px{
+    margin-bottom: 0;
+}
+
+.wd-margin-top-5px-left-12px{
+    margin-top: 5px;
+    margin-left: 12px;
+}
+.wd-margin-top-5px{
+    margin-top: 5px;
+    /*margin-left: 12px;*/
+}
+
+.wd-margin-top-12px-left-12px{
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.wd-margin-top-12px{
+    /*margin-left: 12px;*/
+    margin-top: 12px;
+}
+.wd-padding-top-12px-left-12px{
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.wd-font-size-15px{
+    font-size: 15px;
+}
+
+.wd-content-max-width-506px{
+    max-width: 506px;
+}
+
+.wd-round-top{
+    border-radius: 15px 15px 0px 0px;
+}
+
+.wd-board-img-content{
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: 1px;
+    border-radius: 15px;
+    width: 504px;
+    /*margin-bottom: 0px;*/
+}
+.wd-margin-bottom-0px{
+    margin-bottom: 0px;
+}
+.wd-margin-bottom-5px{
+    margin-bottom: 5px;
+}
+.wd-padding-bottom-0px{
+    padding-bottom: 0px;
+}
+.wd-board-content{
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: 1px 0px 0px 0px;
+    width: 504px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.wd-4-icons{
+    /*margin-left: 12px;*/
+    text-decoration: none;
+    color: rgb(47, 51, 54);
+}
+.wd-4-number{
+    color: rgb(47, 51, 54);
+    margin-left: 12px;
+    margin-right: 85px;
+    /*width: 15%;*/
+}
+.wd-color-47-51-54{
+    color: rgb(47, 51, 54);
+}
+
+.wd-color-red{
+    color: red;
+}
+.wd-margin-bottom-12px{
+    margin-bottom: 12px;
+}
+.wd-4-icons-justify {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+}

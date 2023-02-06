@@ -1,0 +1,51 @@
+.wd-board-color{
+    color: rgb(47, 51, 54);
+}
+
+.wd-board{
+    border-width: 1px;
+    padding-left: 15px;
+    margin-left: 50px;
+    /*flex-wrap: wrap;*/
+    /*display: flex;*/
+}
+
+.wd-border-solid {
+    border-style: solid;
+}
+
+.wd-relative{
+    position: relative;
+}
+
+.wd-rgb-110-118-125{
+    color: rgb(110, 118, 125);
+}
+
+.wd-front-size-13{
+    font-size:13px;
+}
+
+.wd-front-size-20{
+    font-size: 20px;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-clear-float{
+    clear: both;
+}
+
+.wd-display-flex{
+    display: flex;
+}
+
+.wd-display-inline{
+    display: inline;
+}
