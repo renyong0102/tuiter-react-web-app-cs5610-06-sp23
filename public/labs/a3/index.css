@@ -532,7 +532,7 @@ and (max-width: 1800px) {
         color: white;
     }
 }
-/*own*/
+/*own example media*/
 @media (min-width: 701px) and (max-width: 900px) {
     h1 {
         font-size: 100px;
