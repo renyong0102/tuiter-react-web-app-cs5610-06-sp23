@@ -1,12 +1,12 @@
-body {
-    background-color: black;
-}
+/*body {*/
+/*    background-color: white;*/
+/*}*/
 
 .wd-board{
     border-width: 1px;
     padding-left: 15px;
     /*padding-bottom: 20px;*/
-    margin-left: 50px;
+    /*margin-left: 50px;*/
     flex-wrap: wrap;
     /*display: flex;*/
     color: rgb(47, 51, 54);
@@ -40,13 +40,16 @@ body {
 }
 
 .wd-margin-right-16px-top-10px-bottom-10px{
-    margin-right: 16px;
+    margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .wd-bg-darkgray{
     background-color: darkgray;
+}
+.wd-fg-darkgray{
+    color: darkgray;
 }
 
 .wd-bg-333{
@@ -73,7 +76,8 @@ body {
 .wd-search-container {
     display: flex;
     margin-top: 15px;
-    background-color: #333;
+    /*background-color: #333;*/
+    background-color: white;
     border-radius: 30px;
     padding: 10px;
     width: 90%;
@@ -178,7 +182,8 @@ body {
 
 .wd-image-round{
     border-radius: 20px;
-    margin-right: 16px;
+    margin-right: 0px;
+    margin-left: 5px;
 }
 
 .wd-dp-inline{
@@ -221,5 +226,66 @@ body {
     margin: 5px;
 }
 
+.wd-right-side-bar-img{
+    width: 50px;
+    height: 50px;
+}
+.wd-img-circle{
+    border-radius: 50%;
+}
+.wd-form-control::-webkit-input-placeholder {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M11.5 10.5c-0.825 0-1.5-0.675-1.5-1.5s0.675-1.5 1.5-1.5c0.825 0 1.5 0.675 1.5 1.5s-0.675 1.5-1.5 1.5zM7 9A2 2 0 1 1 7 5a2 2 0 0 1 0 4z' fill='%23757575'/%3E%3C/svg%3E");
+    background-position: left 8px center;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
 
+.wd-tuiter-color{
+    color: #1DA1F2
+}
+.wd-gold-color{
+    color: gold;
+}
 
+.wd-bg-tuiter-color{
+    background-color: #1DA1F2
+}
+.wd-rounded-15 {
+    border-radius: 15%;
+}
+.wd-no-underline {
+    text-decoration: none;
+}
+.wd-font-weight-bold{
+    font-weight: bold;
+}
+.list-group.wd-border-round{
+    /*border-bottom: solid 1px black;*/
+    /*border-bottom-left-radius: 50%;*/
+    /*border-bottom-right-radius: 50%;*/
+    border-radius: 25px;
+}
+.wd-clear-mosaic {
+    image-rendering: auto;
+}
+.wd-border-bottom-tuiter-color {
+    border-bottom: 2px solid #61dafb;
+    /*border-bottom-color: #1DA1F2;*/
+}
+.wd-justify-content{
+    justify-content: space-between;
+}
+.wd-border-bottom-1DA1F2 {
+    border-bottom: 1px solid #1DA1F2;
+}
+.border-width-4px {
+    border-width: 4px;
+    /*border-bottom-style: solid;*/
+}
+.wd-padding-bottom-0px{
+    padding-bottom: 0px;
+}
+.wd-padding-left-0-right-0{
+    padding-left: 0px;
+    padding-right: 0px;
+}

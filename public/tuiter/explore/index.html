@@ -5,318 +5,357 @@
     <title>Title</title>
 <!--  linked with index.css in same directory-->
     <link href="index.css"
-          rel="stylesheet">
+          rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
-
-    <!--    <style>-->
-<!--        body {-->
-<!--            background-color: black;-->
-<!--        }-->
-<!--    </style>-->
+          rel="stylesheet"/>
+<!--homework 4 with bootstrap-->
+<!--    <link href="../../vendors/bootstrap/css/bootstrap.min.css"-->
+<!--          rel="stylesheet"/>-->
+<!--    <link href="../../vendors/fontawesome/css/all.css"-->
+<!--          rel="stylesheet"/>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          rel="stylesheet"/>
 </head>
 <body>
-<!--    4.1 Styling the explore screen (25pts)-->
-<!--A-->
-    <div class="wd-board wd-board-color wd-border-solid">
-        <div>
-            <div class="wd-float-right">
-                <a href="explore-settings.html" class="material-icons wd-setting-icon">
-                    settings
-                </a>
+<!--4 Tuiter (50pts) homework 4 with bootstrap-->
+<div class="container">
+    <div class="row">
+<!--    1. left is a navigation sidebar -->
+        <div class="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 mt-2">
+            <!--        <h3>Sidebar</h3></div>-->
+            <div class="list-group">
+                <i class="list-group-item fab fa-twitter">
+                </i>
+                <div>
+                    <a href="#" class="d-block d-xl-none list-group-item">
+                        <i class="fa fa-home"></i></a>
+                    <a class="d-none d-xl-block list-group-item" href="#">
+                        <i class="fa fa-home"></i>
+                        Home</a>
+                </div>
+                <div>
+                    <a href="#" class="d-block d-xl-none list-group-item">
+                        <i class="fa fa-hashtag"></i></a>
+                    <a class="d-none d-xl-block list-group-item" href="#">
+                        <i class="fa fa-hashtag"></i>
+                        Explore</a>
+                </div>
+                <div>
+                    <a href="#" class="d-block d-xl-none list-group-item">
+                        <i class="fa fa-bell"></i></a>
+                    <a class="d-none d-xl-block list-group-item" href="#">
+                        <i class="fa fa-bell"></i>
+                        Notifications</a>
+                </div>
+                <div>
+                    <a href="#" class="d-block d-xl-none list-group-item">
+                        <i class="fa fa-envelope"></i></a>
+                    <a class="d-none d-xl-block list-group-item" href="#">
+                        <i class="fa fa-envelope"></i>
+                        Messages</a>
+                </div>
+                <div>
+                    <a href="#" class="d-block d-xl-none list-group-item">
+                        <i class="fa fa-bookmark"></i></a>
+                    <a class="d-none d-xl-block list-group-item" href="#">
+                        <i class="fa fa-bookmark"></i>
+                        Bookmarks</a>
+                </div>
+                <div>
+                    <a href="#" class="d-block d-xl-none list-group-item">
+                        <i class="fa fa-list"></i></a>
+                    <a class="d-none d-xl-block list-group-item" href="#">
+                        <i class="fa fa-list"></i>
+                        Lists</a>
+                </div>
+                <div>
+                    <a href="#" class="d-block d-xl-none list-group-item">
+                        <i class="fa fa-user"></i></a>
+                    <a class="d-none d-xl-block list-group-item" href="#">
+                        <i class="fa fa-user"></i>
+                        Profile</a>
+                </div>
+                <div>
+                    <a href="#" class="d-block d-xl-none list-group-item">
+                        <i class="fa fa-solid fa-ellipsis"></i></a>
+                    <a class="d-none d-xl-block list-group-item" href="#">
+                        <i class="fa fa-solid fa-ellipsis"></i>
+                        More</a>
+                </div>
+                <button type="submit" class="btn btn-primary rounded-pill mt-2">
+                    Tuit
+                </button>
             </div>
-            <div class="wd-search-container">
-                <span class="material-icons wd-rgb-110-118-125">search</span>
-                <input type="text" placeholder="Search Tuiter"/>
-            </div>
-            <div class="wd-clear-float"></div>
         </div>
 
-        <!--B-->
-        <div class="wd-clear-float">
-            <div class="wd-width">
-                <a href="#"
-                   class="wd-links-selected wd-float-left">
-                        For you
-                </a>
-            </div>
-<!--            <span class="wd-border-below">For you</span>-->
-            <a href="#"
-               class="wd-link-non-selected wd-float-left">
-                Trending
-            </a>
-            <a href="#"
-               class="wd-link-non-selected wd-float-left">
-                COVID-19
-            </a>
-            <a href="#"
-               class="wd-link-non-selected wd-float-left">
-                News
-            </a>
-            <a href="#"
-               class="wd-link-non-selected wd-float-left">
-                Sports
-            </a>
-            <a href="#"
-               class="wd-link-non-selected wd-float-left">
-                Entertainment
-            </a>
-        </div>
-        <div class="wd-clear-float"></div>
-    </div>
-
-    <div class="wd-clear-float wd-board wd-board-color wd-border-solid wd-bg-333"></div>
-
-<!--    <hr class="wd-clear-float wd-board-color">-->
-<!--C-->
-    <div class="wd-clear-float wd-board wd-board-color wd-border-solid">
-        <div>
-            <div class="wd-rgb-110-118-125 wd-front-size-13 wd-margin-top-15px-left-5px wd-display-flex">
-                Trending in Science
-<!--                <span class="material-icons">ellipsis</span>-->
+<!--    2. column in the middle contains the main content-->
+        <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10 col-10 mt-2 mb-4">
+            <div class="row mb-2">
+                <div class="col-11">
+                    <ul class="list-group">
+                        <li class="list-group-item rounded-pill">
+                            <label for="search">
+                                <i class="fa fa-search d-inline"></i>
+                            </label>
+                            <input type="text" class="d-inline border-0 border-white"
+                                   placeholder="Search Twitter"
+                                   id="search"
+                                   style="outline: none; width: 80%">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-1">
+                    <a href="explore-settings.html">
+                        <i class="fa fa-cog fa-2x text-primary mt-1"  ></i>
+                    </a >
+                </div>
             </div>
 
-            <h3 class="wd-fg-white wd-margin-5px">Starship</h3>
-            <div class="wd-rgb-110-118-125 wd-front-size-13 wd-margin-5px">
-                55.5k Tuiters
-            </div>
-        </div>
-
-        <div>
-            <div class="wd-rgb-110-118-125 wd-front-size-13 wd-margin-top-15px-left-5px">
-                Sports Trending
-            </div>
+<!--            <div class="row mb-2">-->
+<!--                <div class="col-11 d-inline">-->
+<!--                    <input class="form-control rounded-pill"-->
+<!--                       id="textarea1"-->
+<!--                       rows="1"-->
+<!--                       placeholder="Search Tuiter">-->
+<!--                </div>-->
+<!--                <div class="col-1 d-inline mt-1">-->
+<!--                    <a href="explore-settings.html">-->
+<!--                        <i class="fa fa-cog fa-2x" style="color:#0b5ed7"></i>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        tabs-->
             <div>
-                <h3 class="wd-fg-white wd-margin-5px">Joe Rogan</h3>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="for-you.html">For you</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    </li>
+                </ul>
             </div>
-            <div class="wd-rgb-110-118-125 wd-front-size-13 wd-margin-5px">
-                5,215k Tuiters
+<!--img with a relative text-->
+            <div class="position-relative">
+                <img class="mt-2 img-fluid"
+                     src="picture/starship.jpeg"
+                     alt="starship image">
+                <div class="position-absolute bottom-0 left-0 p-2 text-white fs-1">
+                    SpaceX's Starship
+                </div>
+            </div>
+<!--post-->
+            <div class="list-group">
+<!--            1st-->
+                <div class="list-group-item d-flex">
+                    <div class="float-start">
+                        <span class="wd-fg-darkgray">
+                            <b>Web Development</b></span>
+                        <br>
+                        <span><b>ReactJS</b></span>
+                        <i class="fa fa-solid fa-circle-check text-black"></i>
+                        <span class="wd-fg-darkgray"> - 2h</span>
+                        <p>
+                            <b>React.js is a component based front end library that makes it very easy to build Single Page
+                                Application or SPAs</b>
+                        </p>
+                    </div>
+                    <div class="float-end">
+                        <img src="picture/reactjs"
+                             height="100px"
+                             width="100px"
+                             class="wd-image-round wd-clear-mosaic"/>
+                    </div>
+                    <div class="float-none"></div>
+                </div>
+<!--            2nd-->
+                <div class="list-group-item d-flex">
+                    <div class="float-start">
+                        <span><b>JavaScript</b></span>
+                        <i class="fa fa-solid fa-circle-check text-black"></i>
+                        <span class="wd-fg-darkgray"> - 2h</span><br>
+                        <span>
+                            <b>JavaScript is programming language that can run on browsers as well as desktops</b>
+                        </span><br>
+                        <span class="wd-fg-darkgray">123K Tuiters</span>
+                    </div>
+                    <div class="float-end">
+                        <img src="picture/JS-yellow"
+                             height="100px"
+                             width="100px"
+                             class="wd-image-round wd-center">
+                    </div>
+                    <div class="float-none"></div>
+                </div>
+<!--            3rd-->
+                <div class="list-group-item">
+                    <div class="float-end">
+                        <img src="picture/jquery.png"
+                             height="100px"
+                             width="100px"
+                             class="wd-image-round wd-center">
+                    </div>
+                    <div class="float-start">
+                        <span class="wd-fg-darkgray">
+                            <b>Web Development</b></span>
+                        <br>
+                        <span><b>JQuery</b></span><br>
+                        <span class="wd-fg-darkgray">
+                            123K Tuiters
+                        </span><br>
+                    </div>
+                    <div class="float-none"></div>
+                </div>
+<!--            4th-->
+                <div class="list-group-item">
+                    <div class="float-end">
+                        <img src="picture/nodejs.png"
+                             height="100px"
+                             width="100px"
+                             class="wd-image-round wd-center">
+                    </div>
+                    <div class="float-start">
+                        <span class="wd-fg-darkgray">
+                            <b>Web Development</b></span>
+                        <br>
+                        <span><b>NodeJS</b></span>
+                        <i class="fa fa-solid fa-circle-check text-black"></i>
+                        <span class="wd-fg-darkgray"> - 2h</span><br>
+                        <span class="wd-fg-darkgray">
+                            123K Tuiters
+                        </span><br>
+                    </div>
+                    <div class="float-none"></div>
+                </div>
             </div>
         </div>
-    </div>
 
-<!--D-->
-<!--1st-->
-    <div class="wd-clear-float wd-board wd-board-color wd-border-solid wd-overflow-auto">
-        <div class="wd-float-right">
-            <img src="picture/new-york.jpeg"
-                 height="100px"
-                 width="100px"
-                 class="wd-image-round wd-margin-right-16px-top-10px-bottom-10px wd-center">
-        </div>
-        <div class="wd-margin-top-15px-left-5px">
-            <h3 class="wd-fg-white wd-dp-inline ">
-                The New York Times
-            </h3>
-            <span class="wd-rgb-110-118-125 wd-margin-top-15px-left-10px wd-dp-inline">Yesterday</span>
-<!--            <div class="wd-clear-float"></div>-->
-            <h3 class="wd-fg-white wd-margin-top-10px">
-                CNN's Cuomo conundrum: A star anchor with a brother in trouble
-            </h3>
-        </div>
-        <div class="wd-clear-float"></div>
-    </div>
-<!--2nd-->
-    <div class="wd-clear-float wd-board wd-board-color wd-border-solid wd-overflow-auto">
-        <div class="wd-float-right">
-            <img src="picture/massachusetts.webp"
-                 height="100px"
-                 width="100px"
-                 class="wd-image-round wd-margin-right-16px-top-10px-bottom-10px wd-center">
-        </div>
-        <div class="wd-margin-top-15px-left-5px">
-            <span class="wd-rgb-110-118-125 wd-margin-top-15px-left-5px wd-dp-inline">COVID-19</span>
-            <span class="wd-rgb-110-118-125 wd-margin-top-15px-left-10px wd-dp-inline">LIVE</span>
-            <!--            <div class="wd-clear-float"></div>-->
-            <h3 class="wd-fg-white wd-margin-5px">
-                COVID-19:News and updates for Massachusetts
-            </h3>
-        </div>
-        <div class="wd-clear-float"></div>
-    </div>
-<!--3rd-->
-    <div class="wd-clear-float wd-board wd-board-color wd-border-solid wd-overflow-auto">
-        <div class="wd-float-right">
-            <img src="picture/bloomberg.jpeg"
-                 height="100px"
-                 width="100px"
-                 class="wd-image-round wd-margin-right-16px-top-10px-bottom-10px wd-center">
-        </div>
-        <div class="wd-margin-top-15px-left-5px">
-            <h3 class="wd-fg-white wd-dp-inline ">
-                Bloomberg Opinion
-            </h3>
-            <span class="wd-rgb-110-118-125 wd-margin-top-15px-left-10px wd-dp-inline">Yesterday</span>
-            <!--            <div class="wd-clear-float"></div>-->
-            <h3 class="wd-fg-white wd-margin-top-10px">
-                Thinking about getting a booster? Read this first.
-            </h3>
-        </div>
-        <div class="wd-clear-float"></div>
-    </div>
-<!--4th-->
-    <div class="wd-clear-float wd-board wd-board-color wd-border-solid wd-overflow-auto">
-        <div class="wd-margin-top-15px-left-5px">
-            <span class="wd-rgb-110-118-125">Trending in United States</span>
-            <h3 class="wd-fg-white wd-margin-top-10px">
-                Wonder Bread
-            </h3>
-            <p class="wd-rgb-110-118-125 wd-margin-top-10px wd-margin-bottom-10px">1,259 Tuiters</p>
-            <!--            <div class="wd-clear-float"></div>-->
-        </div>
-        <div class="wd-clear-float"></div>
-    </div>
+<!--    3. right is another side bar with links-->
+        <div class="col-xl-4 col-lg-4 d-none d-lg-block mt-2">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <b>Who to follow</b>
+                </li>
+<!--            1st-->
+                <li class="list-group-item d-flex justify-content-between align-items-center ">
+                    <div class="col-1">
+                        <img class="wd-right-side-bar-img"
+                             src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png"
+                             alt="Java"/>
+                    </div>
+                    <div class="ms-4 me-auto col-7">
+                        <div class="fw-bold">
+                            Java
+                            <i class="fa fa-solid fa-circle-check text-black"></i>
+                        </div>
+                        @Java
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary rounded-pill wd-float-right"
+                                type="submit">
+                            Follow
+                        </button>
+                    </div>
+                </li>
+<!--            2nd-->
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="col-1">
+                        <img class="wd-right-side-bar-img rounded-circle"
+                             src="picture/Relativity-Sapce.avif"
+                             alt="java"/>
+                    </div>
+                    <div class="ms-4 me-auto col-7">
+                        <div>
+                            <b>Relativity Sapce</b>
+                            <i class="fa fa-solid fa-circle-check text-black"></i>
+                        </div>
+                        <div>@relativityspace</div>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary rounded-pill wd-float-right"
+                                type="submit">
+                            Follow
+                        </button>
+                    </div>
+                </li>
+<!--            3rd-->
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="col-1">
+                        <img class="wd-right-side-bar-img rounded-circle"
+                             src="picture/virgin.svg"
+                             alt="java"/>
+                    </div>
+                    <div class="ms-4 me-auto col-7">
+                        <div>
+                            <b>Virgin Galactic</b>
+                            <i class="fa fa-solid fa-circle-check text-black"></i>
+                        </div>
+                        @virgingalactic
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary rounded-pill wd-float-right"
+                                type="submit">
+                            Follow
+                        </button>
+                    </div>
+                </li>
+<!--            4th-->
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="col-1">
+                        <img class="wd-right-side-bar-img rounded-circle"
+                             src="picture/nasa.png"
+                             alt="java"/>
+                    </div>
+                    <div class="ms-4 me-auto col-7">
+                        <div>
+                            <b>NASA</b>
+                            <i class="fa fa-solid fa-circle-check text-black"></i>
+                        </div>
+                        @NASA
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary rounded-pill wd-float-right"
+                                type="submit">
+                            Follow
+                        </button>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <img class="wd-right-side-bar-img rounded-circle"
+                         src="picture/tesla.jpeg"
+                         alt="java"/>
+                    <div class="ms-2 me-auto">
+                        <div>
+                            <b>Tesla</b>
+                            <i class="fa fa-solid fa-circle-check text-black"></i>
+                        </div>
+                        @Tesla
+                    </div>
+                    <button class="btn btn-primary rounded-pill"
+                            type="submit">
+                        Follow
+                    </button>
+                </li>
+            </ul>
 
-<!--2nd-->
+        </div>
+    </div>
+</div>
+
+
+    <!--    4.1 Styling the explore screen (25pts)-->
     <!--A-->
-<!--    <div class="wd-board wd-board-color wd-border-solid">-->
-<!--        <div>-->
-<!--            <div class="wd-float-right">-->
-<!--                <a href="explore-settings.html" class="material-icons wd-setting-icon">-->
-<!--                    settings-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="wd-search-container">-->
-<!--                <span class="material-icons wd-rgb-110-118-125">search</span>-->
-<!--                <input type="text" placeholder="Search Tuiter"/>-->
-<!--            </div>-->
-<!--            <div class="wd-clear-float"></div>-->
-<!--        </div>-->
-
-        <!--B-->
-<!--        <div class="wd-clear-float">-->
-<!--            <div class="wd-width">-->
-<!--                <a href="#"-->
-<!--                   class="wd-links-selected wd-float-left">-->
-<!--                    For you-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            &lt;!&ndash;            <span class="wd-border-below">For you</span>&ndash;&gt;-->
-<!--            <a href="#"-->
-<!--               class="wd-link-non-selected wd-float-left">-->
-<!--                Trending-->
-<!--            </a>-->
-<!--            <a href="#"-->
-<!--               class="wd-link-non-selected wd-float-left">-->
-<!--                COVID-19-->
-<!--            </a>-->
-<!--            <a href="#"-->
-<!--               class="wd-link-non-selected wd-float-left">-->
-<!--                News-->
-<!--            </a>-->
-<!--            <a href="#"-->
-<!--               class="wd-link-non-selected wd-float-left">-->
-<!--                Sports-->
-<!--            </a>-->
-<!--            <a href="#"-->
-<!--               class="wd-link-non-selected wd-float-left">-->
-<!--                Entertainment-->
-<!--            </a>-->
-<!--        </div>-->
-<!--        <div class="wd-clear-float"></div>-->
-<!--    </div>-->
-
-    <div class="wd-clear-float wd-board wd-board-color wd-border-solid wd-bg-333"></div>
-
-    <!--    <hr class="wd-clear-float wd-board-color">-->
-    <!--C-->
-    <div class="wd-clear-float wd-board wd-board-color wd-border-solid">
-        <div>
-            <div class="wd-rgb-110-118-125 wd-front-size-13 wd-margin-top-15px-left-5px wd-display-flex">
-                Cybertruck in progress
-<!--                <span class="material-icons">more</span>-->
-            </div>
-
-            <h3 class="wd-fg-white wd-margin-5px">Cybertruck</h3>
-            <div class="wd-rgb-110-118-125 wd-front-size-13 wd-margin-5px">
-                123456789.5k Tuiters
-            </div>
-        </div>
-
-        <div>
-            <div class="wd-rgb-110-118-125 wd-front-size-13 wd-margin-top-15px-left-5px">
-                EV car Trending
-            </div>
-            <div>
-                <h3 class="wd-fg-white wd-margin-5px">Elon Musk</h3>
-            </div>
-            <div class="wd-rgb-110-118-125 wd-front-size-13 wd-margin-5px">
-                987654321k Tuiters
-            </div>
-        </div>
-    </div>
-
-    <!--D-->
-    <!--1st-->
-    <div class="wd-clear-float wd-board wd-board-color wd-border-solid wd-overflow-auto">
-        <div class="wd-float-right">
-            <img src="picture/cybertruck.avif"
-                 height="100px"
-                 width="100px"
-                 class="wd-image-round wd-margin-right-16px-top-10px-bottom-10px wd-center">
-        </div>
-        <div class="wd-margin-top-15px-left-5px">
-            <h3 class="wd-fg-white wd-dp-inline ">
-                The Tesla Cybertruck Times
-            </h3>
-            <span class="wd-rgb-110-118-125 wd-margin-top-15px-left-10px wd-dp-inline">Today</span>
-            <!--            <div class="wd-clear-float"></div>-->
-            <h3 class="wd-fg-white wd-margin-top-10px">
-                Elon speaks: Cybertruck will delivered in end of 2023
-            </h3>
-        </div>
-        <div class="wd-clear-float"></div>
-    </div>
-    <!--2nd-->
-    <div class="wd-clear-float wd-board wd-board-color wd-border-solid wd-overflow-auto">
-        <div class="wd-float-right">
-            <img src="picture/tesla.webp"
-                 height="100px"
-                 width="100px"
-                 class="wd-image-round wd-margin-right-16px-top-10px-bottom-10px wd-center">
-        </div>
-        <div class="wd-margin-top-15px-left-5px">
-            <span class="wd-rgb-110-118-125 wd-margin-top-15px-left-5px wd-dp-inline">Cybertruck</span>
-            <span class="wd-rgb-110-118-125 wd-margin-top-15px-left-10px wd-dp-inline">LIVE</span>
-            <!--            <div class="wd-clear-float"></div>-->
-            <h3 class="wd-fg-white wd-margin-5px">
-                Cybertruck: News and updates from Texas
-            </h3>
-        </div>
-        <div class="wd-clear-float"></div>
-    </div>
-    <!--3rd-->
-    <div class="wd-clear-float wd-board wd-board-color wd-border-solid wd-overflow-auto">
-        <div class="wd-float-right">
-            <img src="picture/eloon.jpeg"
-                 height="100px"
-                 width="100px"
-                 class="wd-image-round wd-margin-right-16px-top-10px-bottom-10px wd-center">
-        </div>
-        <div class="wd-margin-top-15px-left-5px">
-            <h3 class="wd-fg-white wd-dp-inline ">
-                Elon & Tesla Opinion
-            </h3>
-            <span class="wd-rgb-110-118-125 wd-margin-top-15px-left-10px wd-dp-inline">Feb 2</span>
-            <!--            <div class="wd-clear-float"></div>-->
-            <h3 class="wd-fg-white wd-margin-top-10px">
-                Thinking about getting a cybertruck? dream about it?
-            </h3>
-        </div>
-        <div class="wd-clear-float"></div>
-    </div>
-    <!--4th-->
-    <div class="wd-clear-float wd-board wd-board-color wd-border-solid wd-overflow-auto">
-        <div class="wd-margin-top-15px-left-5px">
-            <span class="wd-rgb-110-118-125">Cybertruck in United States</span>
-            <h3 class="wd-fg-white wd-margin-top-10px">
-                Cybertruck future
-            </h3>
-            <p class="wd-rgb-110-118-125 wd-margin-top-10px wd-margin-bottom-10px">1234567890 Tuiters</p>
-            <!--            <div class="wd-clear-float"></div>-->
-        </div>
-        <div class="wd-clear-float"></div>
-    </div>
 
 
 
