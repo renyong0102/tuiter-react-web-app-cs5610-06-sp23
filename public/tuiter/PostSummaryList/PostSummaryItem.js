@@ -20,7 +20,8 @@ const PostSummaryItem = (post) =>{
                 <img src= ${post.image}
                      height="100px"
                      width="100px"
-                     class="wd-image-round wd-center">
+                     class="wd-image-round wd-center"
+                     style="border-radius: 15px">
             </div>
         </div>
     `);

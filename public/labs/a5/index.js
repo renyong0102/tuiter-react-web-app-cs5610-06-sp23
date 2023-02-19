@@ -190,6 +190,7 @@ console.log('Map function')
 const squares = numberArray1.map(square);
 // cube funtion to each element
 const cubes = numberArray1.map(a => a * a * a);
+console.log(numberArray1);
 console.log(squares);
 console.log(cubes);
 
@@ -220,6 +221,7 @@ const evenNumbers = numberArray1
     .filter(a => a % 2 === 0);
 const oddNumbers = numberArray1
     .filter(a => a % 2 !== 0);
+console.log(numberArray1)
 console.log(numbersGreaterThan2);
 console.log(evenNumbers);
 console.log(oddNumbers);
@@ -274,6 +276,7 @@ const init = () => {
     // modify an element's attributes by using the attr method
     //reads the ID attribute of the heading element
     const id = getIdAttr.attr('id');
+    console.log('Get and set attributes')
     console.log(id);
 
     //The attr function can not only be used to read the value of an attribute like above, but it can also be used to
