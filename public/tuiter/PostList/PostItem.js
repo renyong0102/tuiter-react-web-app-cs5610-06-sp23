@@ -2,7 +2,7 @@
 
 const PostItem = (post) =>{
     return(`
-    <div class="list-group-item d-flex">
+    <div class="list-group-item d-flex border-secondary" style="border-width: 0 0 1px 0">
         <div class="col-1">
             <img class="wd-avatar-image wd-margin-top-12px-left-16px float-start ms-0" src=${post.profileImage}>
         </div>
