@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
 <!--  linked with index.css in same directory-->
-    <link href="index.css"
-          rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
+    <link href="../styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"/>
 <!--homework 4 with bootstrap-->
@@ -13,352 +11,37 @@
 <!--          rel="stylesheet"/>-->
 <!--    <link href="../../vendors/fontawesome/css/all.css"-->
 <!--          rel="stylesheet"/>-->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
           rel="stylesheet"/>
+    <link href="../../vendors/bootswatch/bootstrap.min.css"
+          rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
           rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Explore screen</title>
 </head>
+
 <body>
-<a href="../navigation.html">Back</a>
+<!--    <a href="../navigation.html">Back</a>-->
+
+<!--5 Tuiter homework5 with javascript-->
+    <div class="container" id="wd-explore"></div>
+    <script src="index.js" type="module"></script>
+
+
+
 <!--4 Tuiter (50pts) homework 4 with bootstrap-->
-<div class="container">
-    <div class="row">
-<!--    1. left is a navigation sidebar -->
-        <div class="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 mt-2">
-            <!--        <h3>Sidebar</h3></div>-->
-            <div class="list-group">
-                <i class="list-group-item fab fa-twitter">
-                </i>
-                <div>
-                    <a href="#" class="d-block d-xl-none list-group-item">
-                        <i class="fa fa-home"></i></a>
-                    <a class="d-none d-xl-block list-group-item" href="#">
-                        <i class="fa fa-home"></i>
-                        Home</a>
-                </div>
-                <div>
-                    <a href="#" class="d-block d-xl-none list-group-item">
-                        <i class="fa fa-hashtag"></i></a>
-                    <a class="d-none d-xl-block list-group-item" href="#">
-                        <i class="fa fa-hashtag"></i>
-                        Explore</a>
-                </div>
-                <div>
-                    <a href="#" class="d-block d-xl-none list-group-item">
-                        <i class="fa fa-bell"></i></a>
-                    <a class="d-none d-xl-block list-group-item" href="#">
-                        <i class="fa fa-bell"></i>
-                        Notifications</a>
-                </div>
-                <div>
-                    <a href="#" class="d-block d-xl-none list-group-item">
-                        <i class="fa fa-envelope"></i></a>
-                    <a class="d-none d-xl-block list-group-item" href="#">
-                        <i class="fa fa-envelope"></i>
-                        Messages</a>
-                </div>
-                <div>
-                    <a href="#" class="d-block d-xl-none list-group-item">
-                        <i class="fa fa-bookmark"></i></a>
-                    <a class="d-none d-xl-block list-group-item" href="#">
-                        <i class="fa fa-bookmark"></i>
-                        Bookmarks</a>
-                </div>
-                <div>
-                    <a href="#" class="d-block d-xl-none list-group-item">
-                        <i class="fa fa-list"></i></a>
-                    <a class="d-none d-xl-block list-group-item" href="#">
-                        <i class="fa fa-list"></i>
-                        Lists</a>
-                </div>
-                <div>
-                    <a href="#" class="d-block d-xl-none list-group-item">
-                        <i class="fa fa-user"></i></a>
-                    <a class="d-none d-xl-block list-group-item" href="#">
-                        <i class="fa fa-user"></i>
-                        Profile</a>
-                </div>
-                <div>
-                    <a href="#" class="d-block d-xl-none list-group-item">
-                        <i class="fa fa-solid fa-ellipsis"></i></a>
-                    <a class="d-none d-xl-block list-group-item" href="#">
-                        <i class="fa fa-solid fa-ellipsis"></i>
-                        More</a>
-                </div>
-                <button type="submit" class="btn btn-primary rounded-pill mt-2">
-                    Tuit
-                </button>
-            </div>
-        </div>
+<!--&lt;!&ndash;    1. left is a navigation sidebar &ndash;&gt;-->
+<!--        <div class="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 mt-2">-->
 
-<!--    2. column in the middle contains the main content-->
-        <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10 col-10 mt-2 mb-4">
-            <div class="row mb-2">
-                <div class="col-11">
-                    <ul class="list-group">
-                        <li class="list-group-item rounded-pill">
-                            <label for="search">
-                                <i class="fa fa-search d-inline"></i>
-                            </label>
-                            <input type="text" class="d-inline border-0 border-white"
-                                   placeholder="Search Twitter"
-                                   id="search"
-                                   style="outline: none; width: 80%">
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-1">
-                    <a href="explore-settings.html">
-                        <i class="fa fa-cog fa-2x text-primary mt-1 float-end"></i>
-                    </a >
-                </div>
-            </div>
+<!--&lt;!&ndash;    2. column in the middle contains the main content&ndash;&gt;-->
+<!--        <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10 col-10 mt-2 mb-4">-->
 
-<!--            <div class="row mb-2">-->
-<!--                <div class="col-11 d-inline">-->
-<!--                    <input class="form-control rounded-pill"-->
-<!--                       id="textarea1"-->
-<!--                       rows="1"-->
-<!--                       placeholder="Search Tuiter">-->
-<!--                </div>-->
-<!--                <div class="col-1 d-inline mt-1">-->
-<!--                    <a href="explore-settings.html">-->
-<!--                        <i class="fa fa-cog fa-2x" style="color:#0b5ed7"></i>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        tabs-->
-            <div>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="for-you.html">For you</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="trending.html">Trending</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="news.html">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sports.html">Sports</a>
-                    </li>
-                    <li class="nav-item d-none d-md-block">
-                        <a class="nav-link" href="entertainment.html">Entertainment</a>
-                    </li>
-                </ul>
-            </div>
-<!--img with a relative text-->
-            <div class="position-relative">
-                <img class="mt-2 img-fluid"
-                     src="picture/starship.jpeg"
-                     alt="starship image">
-                <div class="position-absolute bottom-0 left-0 p-2 text-white fs-1">
-                    SpaceX's Starship
-                </div>
-            </div>
-<!--post-->
-            <div class="list-group">
-<!--            1st-->
-                <div class="list-group-item d-flex">
-                    <div class="float-start">
-                        <span class="wd-fg-darkgray">
-                            <b>Web Development</b></span>
-                        <br>
-                        <span><b>ReactJS</b></span>
-                        <i class="fa fa-solid fa-circle-check text-black"></i>
-                        <span class="wd-fg-darkgray"> - 2h</span>
-                        <p>
-                            <b>React.js is a component based front end library that makes it very easy to build Single Page
-                                Application or SPAs</b>
-                        </p>
-                    </div>
-                    <div class="float-end">
-                        <img src="picture/reactjs"
-                             height="100px"
-                             width="100px"
-                             class="wd-image-round wd-clear-mosaic"/>
-                    </div>
-                    <div class="float-none"></div>
-                </div>
-<!--            2nd-->
-                <div class="list-group-item d-flex">
-                    <div class="float-start">
-                        <span><b>JavaScript</b></span>
-                        <i class="fa fa-solid fa-circle-check text-black"></i>
-                        <span class="wd-fg-darkgray"> - 2h</span><br>
-                        <span>
-                            <b>JavaScript is programming language that can run on browsers as well as desktops</b>
-                        </span><br>
-                        <span class="wd-fg-darkgray">123K Tuiters</span>
-                    </div>
-                    <div class="float-end">
-                        <img src="picture/JS-yellow"
-                             height="100px"
-                             width="100px"
-                             class="wd-image-round wd-center">
-                    </div>
-                    <div class="float-none"></div>
-                </div>
-<!--            3rd-->
-                <div class="list-group-item">
-                    <div class="float-end">
-                        <img src="picture/jquery.png"
-                             height="100px"
-                             width="100px"
-                             class="wd-image-round wd-center">
-                    </div>
-                    <div class="float-start">
-                        <span class="wd-fg-darkgray">
-                            <b>Web Development</b></span>
-                        <br>
-                        <span><b>JQuery</b></span><br>
-                        <span class="wd-fg-darkgray">
-                            123K Tuiters
-                        </span><br>
-                    </div>
-                    <div class="float-none"></div>
-                </div>
-<!--            4th-->
-                <div class="list-group-item">
-                    <div class="float-end">
-                        <img src="picture/nodejs.png"
-                             height="100px"
-                             width="100px"
-                             class="wd-image-round wd-center">
-                    </div>
-                    <div class="float-start">
-                        <span class="wd-fg-darkgray">
-                            <b>Web Development</b></span>
-                        <br>
-                        <span><b>NodeJS</b></span>
-                        <i class="fa fa-solid fa-circle-check text-black"></i>
-                        <span class="wd-fg-darkgray"> - 2h</span><br>
-                        <span class="wd-fg-darkgray">
-                            123K Tuiters
-                        </span><br>
-                    </div>
-                    <div class="float-none"></div>
-                </div>
-            </div>
-        </div>
-
-<!--    3. right is another side bar with links-->
-        <div class="col-xl-4 col-lg-4 d-none d-lg-block mt-2">
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <b>Who to follow</b>
-                </li>
-<!--            1st-->
-                <li class="list-group-item d-flex justify-content-between align-items-center ">
-                    <div class="col-1">
-                        <img class="wd-right-side-bar-img"
-                             src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png"
-                             alt="Java"/>
-                    </div>
-                    <div class="ms-4 me-auto col-7">
-                        <div class="fw-bold">
-                            Java
-                            <i class="fa fa-solid fa-circle-check text-black"></i>
-                        </div>
-                        @Java
-                    </div>
-                    <div class="col-3">
-                        <button class="btn btn-primary rounded-pill wd-float-right"
-                                type="submit">
-                            Follow
-                        </button>
-                    </div>
-                </li>
-<!--            2nd-->
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="col-1">
-                        <img class="wd-right-side-bar-img rounded-circle"
-                             src="picture/Relativity-Sapce.avif"
-                             alt="java"/>
-                    </div>
-                    <div class="ms-4 me-auto col-7">
-                        <div>
-                            <b>Relativity Sapce</b>
-                            <i class="fa fa-solid fa-circle-check text-black"></i>
-                        </div>
-                        <div>@relativityspace</div>
-                    </div>
-                    <div class="col-3">
-                        <button class="btn btn-primary rounded-pill wd-float-right"
-                                type="submit">
-                            Follow
-                        </button>
-                    </div>
-                </li>
-<!--            3rd-->
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="col-1">
-                        <img class="wd-right-side-bar-img rounded-circle"
-                             src="picture/virgin.svg"
-                             alt="java"/>
-                    </div>
-                    <div class="ms-4 me-auto col-7">
-                        <div>
-                            <b>Virgin Galactic</b>
-                            <i class="fa fa-solid fa-circle-check text-black"></i>
-                        </div>
-                        @virgingalactic
-                    </div>
-                    <div class="col-3">
-                        <button class="btn btn-primary rounded-pill wd-float-right"
-                                type="submit">
-                            Follow
-                        </button>
-                    </div>
-                </li>
-<!--            4th-->
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="col-1">
-                        <img class="wd-right-side-bar-img rounded-circle"
-                             src="picture/nasa.png"
-                             alt="java"/>
-                    </div>
-                    <div class="ms-4 me-auto col-7">
-                        <div>
-                            <b>NASA</b>
-                            <i class="fa fa-solid fa-circle-check text-black"></i>
-                        </div>
-                        @NASA
-                    </div>
-                    <div class="col-3">
-                        <button class="btn btn-primary rounded-pill wd-float-right"
-                                type="submit">
-                            Follow
-                        </button>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <img class="wd-right-side-bar-img rounded-circle"
-                         src="picture/tesla.jpeg"
-                         alt="java"/>
-                    <div class="ms-2 me-auto">
-                        <div>
-                            <b>Tesla</b>
-                            <i class="fa fa-solid fa-circle-check text-black"></i>
-                        </div>
-                        @Tesla
-                    </div>
-                    <button class="btn btn-primary rounded-pill"
-                            type="submit">
-                        Follow
-                    </button>
-                </li>
-            </ul>
-
-        </div>
-    </div>
-</div>
-
-
-    <!--    4.1 Styling the explore screen (25pts)-->
-    <!--A-->
-
-
-
+<!--&lt;!&ndash;    3. right is another side bar with links&ndash;&gt;-->
+<!--        <div class="col-xl-4 col-lg-4 d-none d-lg-block mt-2">-->
 </body>
 </html>

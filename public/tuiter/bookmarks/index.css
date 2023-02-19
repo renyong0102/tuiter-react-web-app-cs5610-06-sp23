@@ -66,8 +66,8 @@ body {
 
 .wd-board-img-content{
     border-style: solid;
-    border-color: rgb(47, 51, 54);
-    border-width: 1px;
+    /*border-color: rgb(47, 51, 54);*/
+    /*border-width: 1px;*/
     border-radius: 15px;
     width: 504px;
     /*margin-bottom: 0px;*/

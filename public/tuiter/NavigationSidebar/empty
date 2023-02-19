@@ -1,0 +1,56 @@
+<!--        <div>-->
+<!--            <a href="#" class="d-block d-xl-none list-group-item">-->
+<!--                <i class="fa fa-home"></i></a>-->
+<!--            <a class="d-none d-xl-block list-group-item" href="../HomeScreen/index.html">-->
+<!--                <i class="fa fa-home"></i>-->
+<!--                Home</a>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <a href="#" class="d-block d-xl-none list-group-item">-->
+<!--                <i class="fa fa-hashtag"></i></a>-->
+<!--            <a class="d-none d-xl-block list-group-item" href="../explore/index.html">-->
+<!--                <i class="fa fa-hashtag"></i>-->
+<!--                Explore</a>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <a href="#" class="d-block d-xl-none list-group-item">-->
+<!--                <i class="fa fa-bell"></i></a>-->
+<!--            <a class="d-none d-xl-block list-group-item" href="#">-->
+<!--                <i class="fa fa-bell"></i>-->
+<!--                Notifications</a>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <a href="#" class="d-block d-xl-none list-group-item">-->
+<!--                <i class="fa fa-envelope"></i></a>-->
+<!--            <a class="d-none d-xl-block list-group-item" href="#">-->
+<!--                <i class="fa fa-envelope"></i>-->
+<!--                Messages</a>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <a href="#" class="d-block d-xl-none list-group-item">-->
+<!--                <i class="fa fa-bookmark"></i></a>-->
+<!--            <a class="d-none d-xl-block list-group-item" href="#">-->
+<!--                <i class="fa fa-bookmark"></i>-->
+<!--                Bookmarks</a>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <a href="#" class="d-block d-xl-none list-group-item">-->
+<!--                <i class="fa fa-list"></i></a>-->
+<!--            <a class="d-none d-xl-block list-group-item" href="#">-->
+<!--                <i class="fa fa-list"></i>-->
+<!--                Lists</a>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <a href="#" class="d-block d-xl-none list-group-item">-->
+<!--                <i class="fa fa-user"></i></a>-->
+<!--            <a class="d-none d-xl-block list-group-item" href="#">-->
+<!--                <i class="fa fa-user"></i>-->
+<!--                Profile</a>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <a href="#" class="d-block d-xl-none list-group-item">-->
+<!--                <i class="fa fa-solid fa-ellipsis"></i></a>-->
+<!--            <a class="d-none d-xl-block list-group-item" href="#">-->
+<!--                <i class="fa fa-solid fa-ellipsis"></i>-->
+<!--                More</a>-->
+<!--        </div>-->

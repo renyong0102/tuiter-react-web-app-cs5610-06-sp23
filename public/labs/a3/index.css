@@ -267,6 +267,18 @@ The "both" value is used to clear floats on both the left and right sides of an 
     background-color: red;
     color: white;
 }
+.margin-bottom {
+    margin-bottom: 50px;
+}
+
+.margin-right-left {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.margin-all-around {
+    margin: 30px;
+}
 .rotate-list-1 {
     transform: rotate(-12deg);
     width: 100px;
