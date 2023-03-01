@@ -1,0 +1,42 @@
+[
+  {
+    "name": "home",
+    "label": "Home",
+    "icon": "bi bi-house-door me-2"
+  },
+  {
+    "name": "explore",
+    "label": "Explore",
+    "icon": "bi bi-compass me-2"
+  },
+  {
+    "name": "notifications",
+    "label":"Notifications",
+    "icon": "bi bi-bell me-2"
+  },
+  {
+    "name": "messages",
+    "label":"Messages",
+    "icon": "bi bi-chat me-2"
+  },
+  {
+    "name": "bookmarks",
+    "label":"Bookmarks",
+    "icon": "bi bi-bookmark me-2"
+  },
+  {
+    "name": "lists",
+    "label":"Lists",
+    "icon": "bi bi-list me-2"
+  },
+  {
+    "name": "profile",
+    "label":"Profile",
+    "icon": "bi bi-people me-2"
+  },
+  {
+    "name": "more",
+    "label":"More",
+    "icon": "bi-three-dots  me-2"
+  }
+]

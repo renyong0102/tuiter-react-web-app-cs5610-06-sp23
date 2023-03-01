@@ -1,4 +1,4 @@
-// Create a new file called TodoList.js and import it into index.js. Use the TodoList function to render the list of
+// Create a new file called TodoList.js and import it into full-post.js. Use the TodoList function to render the list of
 // todos as shows below
 
 import TodoItem from "./TodoItem.js";

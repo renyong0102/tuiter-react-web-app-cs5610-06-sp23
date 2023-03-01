@@ -10,7 +10,7 @@ function exploreComponent() {
     <div class="row mt-2">
         <div class="col-2 col-md-2 col-lg-1 col-xl-2">
 <!--        <h3>NavigationSidebar</h3>-->
-<!--        from file NavigationSidebar - index.js-->
+<!--        from file NavigationSidebar - full-post.js-->
             ${NavigationSidebar('Explore')}
         </div>
         <div class="col-10 col-lg-7 col-xl-6">
@@ -25,6 +25,6 @@ function exploreComponent() {
    `);
 }
 $(exploreComponent);
-// from index.html, use <script> on this index.js file
+// from index.html, use <script> on this full-post.js file
 // <div class="container" id="wd-explore"></div>
-// <script src="index.js" type="module"></script>
+// <script src="full-post.js" type="module"></script>
