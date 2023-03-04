@@ -21,6 +21,7 @@ const FullPost = (
                 </a>
 
                 <div className="wd-font-size-15px wd-content-max-width-506px wd-margin-top-5px wd-margin-bottom-10px wd-margin-bottom-5px">
+                    {/*because there is <html> component in post, we use this to let <html> work*/}
                     <span dangerouslySetInnerHTML={{__html:post.post}}></span>
                 </div>
                 <div className="border mt-2 wd-content-max-width-506px wd-border-radius-15px">

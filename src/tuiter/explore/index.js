@@ -10,7 +10,9 @@ const ExploreComponent = () => {
                 <div className="col-11 position-relative">
                     <input placeholder="Search Tuiter"
                            className="form-control rounded-pill ps-5"/>
-                    <i className="bi bi-search position-absolute translate-middle-y top-50 wd-search-icon text-muted ms-3"></i>
+                    {/*<i className="bi bi-search position-absolute translate-middle-y top-50 wd-search-icon text-muted ms-3"></i>*/}
+                    <i className="bi bi-search position-absolute d-inline text-muted wd-nudge-search-icon"></i>
+
                 </div>
                 {/*1/12 gear icon*/}
                 <div className="col-1">
