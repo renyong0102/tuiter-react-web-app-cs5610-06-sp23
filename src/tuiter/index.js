@@ -47,7 +47,6 @@ function Tuiter() {
                         <Route path="edit-profile" element={<EditProfile/>}/>
                     </Routes>
                 </div>
-
                 <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                     <WhoToFollowList/>
                 </div>
