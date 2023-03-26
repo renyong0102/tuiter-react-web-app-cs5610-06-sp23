@@ -25,7 +25,6 @@ const ProfileItem = () => {
                          style={{bottom:"-70px",left:"15px"}}
                          src={`/images/${profile.profilePicture}`}/>
                 </div>
-
             </div>
             <div>
                 <Link to="/tuiter/edit-profile" className="float-end rounded-pill text-decoration-none btn border fw-bold mt-3 me-4">

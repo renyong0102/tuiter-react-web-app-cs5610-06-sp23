@@ -38,7 +38,6 @@ const TuitItem = (
                     {tuit.tuit}
                 </div>
                 <TuitStats tuit={tuit}/>
-
             </div>
         </li>
     );

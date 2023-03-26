@@ -49,15 +49,17 @@ const EditProfile = () =>{
             </div>
 
             <div className="border ms-3 mb-4 me-3" style={{marginTop:"100px"}}>
-                <label className="text-muted ms-2">Name</label><br/>
+                <label className="text-muted ms-2" for="name">Name</label><br/>
                 <input defaultValue={profile.firstName + " " + profile.lastName}
                        className="form-control border-0"
+                       id="name"
                        onChange={handleNameChange}/>
             </div>
             <div className="border ms-3 mb-4 me-3">
-                <label className="text-muted ms-2">Bio</label><br/>
+                <label className="text-muted ms-2" for="bio">Bio</label><br/>
                 <textarea defaultValue={profile.bio}
                           className="form-control border-0"
+                          id="bio"
                           onChange={(e) =>
                               setProfileInfo({
                                   ...profileInfo,
@@ -65,9 +67,10 @@ const EditProfile = () =>{
                               })}/>
             </div>
             <div className="border ms-3 mb-4 me-3">
-                <label className="text-muted ms-2">Location</label><br/>
+                <label className="text-muted ms-2" for="location">Location</label><br/>
                 <input defaultValue={profile.location}
                        className="form-control border-0"
+                       id="location"
                        onChange={(e) =>
                            setProfileInfo({
                                ...profileInfo,
@@ -75,9 +78,11 @@ const EditProfile = () =>{
                            })}/>
             </div>
             <div className="border ms-3 mb-4 me-3">
-                <label className="text-muted ms-2">Website</label><br/>
+                <label className="text-muted ms-2" for="website">Website &middot;
+                    <a href="#" className="text-decoration-none">Edit</a></label><br/>
                 <input defaultValue={profile.website}
                        className="form-control border-0"
+                       id="website"
                        onChange={(e) =>
                            setProfileInfo({
                                ...profileInfo,
@@ -85,9 +90,10 @@ const EditProfile = () =>{
                            })}/>
             </div>
             <div className="border ms-3 mb-4 me-3">
-                <label className="text-muted ms-2">date of birth</label><br/>
+                <label className="text-muted ms-2" for="dateOfBirth">date of birth</label><br/>
                 <input defaultValue={profile.dateOfBirth}
                        className="form-control border-0"
+                       id="dateOfBirth"
                        onChange={(e) =>
                            setProfileInfo({
                                ...profileInfo,
