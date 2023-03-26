@@ -19,7 +19,7 @@ function App() {
                   {/*       element={<Labs/>}/>*/}
                   {/*2.7 Implementing navigation in Single Page Applications*/}
                   {/*the default page is Labs, ex: the end of URL-hello will nav to hello page*/}
-                  <Route index element={<Labs/>}/>
+                  <Route path="/*" element={<Labs/>}/>
                   <Route path="/hello" element={<HelloWorld/>}/>
                   {/*/tuiter/-> URL*/}
                   <Route path="/tuiter/*" element={<Tuiter/>}/>
