@@ -1,9 +1,11 @@
 import React from "react";
+import ProfileItem from "./profile-item";
 
-const ProfileCompoent = () =>{
+const ProfileComponent = () =>{
     return(
         <>
+            <ProfileItem/>
         </>
     );
 };
-export default ProfileCompoent;
+export default ProfileComponent;
