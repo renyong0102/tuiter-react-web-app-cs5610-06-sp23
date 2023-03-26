@@ -40,11 +40,14 @@ const EditProfile = () =>{
                 <img className="img-fluid" src={`/images/${profile.bannerPicture}`}/>
                 <i className="bi"></i>
                 <i className="bi"></i>
-                <div>
-                <img className="rounded-circle ms-3 mb-2 position-absolute"
-                     width={140} height={140}
-                     style={{bottom:"-70px",left:"15px"}}
-                     src={`/images/${profile.profilePicture}`}/>
+                <div className="">
+                    <img className="rounded-circle ms-3 mb-2 position-absolute"
+                         width={140} height={140}
+                         style={{bottom:"-70px",left:"15px"}}
+                         alt="profile-image"
+                         src={`/images/${profile.profilePicture}`}/>
+                    {/*<i className="bi bi-camera position-absolute"*/}
+                    {/*   style={{left:"15%"}}></i>*/}
                 </div>
             </div>
 
@@ -78,8 +81,7 @@ const EditProfile = () =>{
                            })}/>
             </div>
             <div className="border ms-3 mb-4 me-3">
-                <label className="text-muted ms-2" for="website">Website &middot;
-                    <a href="#" className="text-decoration-none">Edit</a></label><br/>
+                <label className="text-muted ms-2" for="website">Website</label><br/>
                 <input defaultValue={profile.website}
                        className="form-control border-0"
                        id="website"
@@ -90,7 +92,8 @@ const EditProfile = () =>{
                            })}/>
             </div>
             <div className="border ms-3 mb-4 me-3">
-                <label className="text-muted ms-2" for="dateOfBirth">date of birth</label><br/>
+                <label className="text-muted ms-2" for="dateOfBirth">Birth date &middot;
+                    <span className="text-decoration-none text-primary">Edit</span></label><br/>
                 <input defaultValue={profile.dateOfBirth}
                        className="form-control border-0"
                        id="dateOfBirth"
@@ -99,6 +102,10 @@ const EditProfile = () =>{
                                ...profileInfo,
                                dateOfBirth:e.target.value,
                            })}/>
+            </div>
+            <div className="ms-3 me-3 mb-4">
+                Switch to professional
+                <i className="bi bi-caret-right float-end"></i>
             </div>
         </div>
     );

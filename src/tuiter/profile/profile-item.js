@@ -12,18 +12,19 @@ const ProfileItem = () => {
                         <i className="bi bi-arrow-left fs-5 font-weight-bold"></i>
                     </Link>
                 </div>
-                <div className="col-10 mt-2">
+                <div className="col-10 mt-2 mb-1">
                     <h3 className="fw-bold">{profile.firstName} {profile.lastName}</h3>
                     <span className="text-muted">6,114 Tweets</span>
                 </div>
             </div>
             <div className="position-relative">
                 <img className="img-fluid" src={`/images/${profile.bannerPicture}`}/>
-                <div>
+                <div className="position-relative">
                     <img className="rounded-circle ms-3 position-absolute"
                          width={140} height={140}
                          style={{bottom:"-70px",left:"15px"}}
-                         src={`/images/${profile.profilePicture}`}/>
+                         src={`/images/${profile.profilePicture}`}
+                    />
                 </div>
             </div>
             <div>
@@ -40,9 +41,9 @@ const ProfileItem = () => {
             </div>
             <div className="ms-3 mb-2">
                 <i className="bi bi-geo-alt text-muted me-3">{profile.location}</i>
-                <i className="bi bi-balloon text-muted me-3">{profile.born}</i>
+                <i className="bi bi-balloon text-muted me-3">Born {profile.born}</i>
                 <span className="me-3 text-muted">{profile.dateOfBirth}</span>
-                <i className="bi bi-calendar text-muted">Joined {profile.dateJoined}</i>
+                <i className="bi bi-calendar text-muted"> Joined {profile.dateJoined}</i>
             </div>
             <div className="ms-3 mb-3">
                 <span className="fw-bold me-2">{profile.followingCount}</span>

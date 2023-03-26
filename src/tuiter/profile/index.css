@@ -1,0 +1,10 @@
+.wd-image-container {
+    position: relative;
+}
+
+.wd-image-container-i {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
