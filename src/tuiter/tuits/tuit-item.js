@@ -3,6 +3,9 @@ import "./index.css";
 import {useDispatch} from "react-redux";
 import {likeToggle, deleteTuit} from "./tuits-reducer";
 import TuitStats from "./tuit-stats";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
+
+
 const TuitItem = (
     {
         // parameter
@@ -14,7 +17,7 @@ const TuitItem = (
     // handle delete event
     // pass tuit's ID to reducer
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id))
+        dispatch(deleteTuitThunk(id))
     }
     const toggleLikeHandler = (tuit) => {
         dispatch(likeToggle(tuit))
@@ -25,7 +28,7 @@ const TuitItem = (
                 <img width={48} height={48} className="rounded-circle d-flex" src={`/images/${tuit.image}`}/>
             </div>
             <div className="col-11 mt-2 ms-2 ps-2 float-end">
-                <span className="wd-font-size-15px wd-display-inline fw-bold">{tuit.userName}</span>
+                <span className="wd-font-size-15px wd-display-inline fw-bold">{tuit.username}</span>
                 <i className="bi bi-check-circle-fill text-primary ms-2"></i>
                 <span className="wd-font-size-15px text-muted ms-2">{tuit.handle}</span>
                 <span className="wd-font-size-15px text-muted ms-2">&middot; {tuit.time}</span>

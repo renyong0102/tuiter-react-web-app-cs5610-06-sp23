@@ -22,7 +22,7 @@ import EditProfile from "./profile/edit-profile";
 const store = configureStore({
     reducer: {
         who:whoReducer,
-        tuits:tuitsReducer,
+        tuitsData:tuitsReducer,
         profile:profileReducer
     }
 });
