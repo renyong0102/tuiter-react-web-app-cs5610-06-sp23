@@ -3,6 +3,7 @@ import './App.css';
 import Labs from "./labs";
 import HelloWorld from "./labs/a6/hello-world";
 import Tuiter from "./tuiter";
+
 // 2.7 Implementing navigation in Single Page Applications
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
